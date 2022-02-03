@@ -6,3 +6,18 @@
 {
     text-align: center;
 }
+#testo
+{
+    text-align: justify;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#footer 
+{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    float: none;
+    background-color: white;
+}
