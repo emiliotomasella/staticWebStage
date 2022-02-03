@@ -14,10 +14,18 @@
 }
 #footer 
 {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: sticky;
     bottom: 0;
-    float: none;
     background-color: white;
+    box-shadow: 0 0 5px #000;
+    text-align: center;
+}
+#titoloImmagine
+{
+    text-align: justify;
+}
+#immagine
+{
+    
+    position: relative;
 }
