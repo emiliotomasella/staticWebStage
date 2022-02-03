@@ -14,11 +14,12 @@
 }
 #footer 
 {
-    position: sticky;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
     bottom: 0;
     background-color: white;
     box-shadow: 0 0 5px #000;
-    text-align: center;
 }
 #titoloImmagine
 {
@@ -28,4 +29,10 @@
 {
     
     position: relative;
+}
+#wrapper
+{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
