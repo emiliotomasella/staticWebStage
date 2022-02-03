@@ -18,7 +18,7 @@
 }
 #immagine
 {
-    
+    float: inherit;
     position: relative;
 }
 #footer
