@@ -12,15 +12,6 @@
     padding-right: 10%;
     padding-left: 10%;
 }
-#footer 
-{
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 0;
-    background-color: white;
-    box-shadow: 0 0 5px #000;
-}
 #titoloImmagine
 {
     text-align: justify;
@@ -30,9 +21,13 @@
     
     position: relative;
 }
-#wrapper
+#footer
 {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px #000;
 }
