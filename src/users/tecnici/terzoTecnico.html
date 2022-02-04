@@ -21,15 +21,15 @@
             <a href = "terzoTecnico.html">
                 <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
                 </br>
-                <b id="nome">...</b>
+                <b id="nomeDescrizioneFoto">...</b>
             </a>
             </br>
             <div id = 'testo'>
                 <h2> Informazioni Personali </h2>
                 <h3> 
-                    Nome: <b id="nome">...</b>
+                    Nome: <b id="nomeDatoPersonale">...</b>
                     </br>
-                    Cognome: <b id="cognome">...</b>
+                    Cognome: <b id="cognomeDatoPersonale">...</b>
                 </h3>
 
             </div>
@@ -42,8 +42,9 @@
         <script>
             (async function() {
                 const { nometec,cognometec } = await( await fetch(`/api/matteo`)).json();
-                document.querySelector('#nome').textContent = nometec;
-                document.querySelector('#cognome').textContent = cognometec;
+                document.querySelector('#nomeDescrizioneFoto').textContent = nometec;
+                document.querySelector('#nomeDatoPersonale').textContent = nometec;
+                document.querySelector('#cognomeDatoPersonale').textContent = cognometec;
             }())
         </script>
     </body>
