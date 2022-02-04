@@ -27,7 +27,9 @@
             <div id = 'testo'>
                 <h2> Informazioni Personali </h2>
                 <h3> 
-                    <b id="datiTecnico"></b>
+                    Nome: <b id="nome">...</b>
+                    </br>
+                    Cognome: <b id="cognome">...</b>
                 </h3>
 
             </div>
@@ -39,8 +41,9 @@
         </div>
         <script>
             (async function() {
-                const { text } = await( await fetch(`/api/emilio`)).json();
-                document.querySelector('#datiTecnico').textContent = text;
+                const { nometec,cognometec } = await( await fetch(`/api/emilio`)).json();
+                document.querySelector('#nome').textContent = nometec;
+                document.querySelector('#cognome').textContent = cognometec;
             }())
         </script>
     </body>
