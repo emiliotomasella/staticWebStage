@@ -1,0 +1,10 @@
+Il pulsante del footer si vede minuscolo su telefono
+
+Il footer nella homepage non sta attaccato al fondo della pagina come dovrebbe, siccome non c'è
+abbastanza contenuto nella pagina stessa. risolvibile inserendo semplicemnte più contenuto
+
+Mancanza di foto e/o dati dei tecnici
+
+Fare attenzione agli href in caso di errore 404 visto l'utilizzo di sottocartelle
+
+Mancanza generale di contenuto

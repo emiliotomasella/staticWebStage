@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" />
+        <title> homepage </title>
+    </head>
+    <body>
+        <div id='testata'>
+            <a href='index.html'>
+                <img id = 'logo' src='https://www.areasciencepark.it/wp-content/themes/areasciencepark_v3/assets/img/logo.svg' width='30%' height="10%"'></img>
+            </a>
+            <h1> Area Science Park</h1>
+            <div id = 'navigazione'>
+                <h3>
+                    <a href='chiSiamo.html'> Chi siamo</a>
+                </h3>
+            </div>
+        </div>
+        <div id = 'corpo'>
+            Benvenuto
+        </div>
+        
+        <div id='footer'>
+            <h4>
+                <a href='teamTecnico.html'> Team tecnico responsabile</a>
+            </h4>
+        </div>
+        
+        <script>
+            (async function() {
+                const { text } = await( await fetch(`/api/message`)).json();
+                document.querySelector('#name').textContent = text;
+            }())
+        </script>
+        
+    </body>
+
+    
+</html>
+
+
