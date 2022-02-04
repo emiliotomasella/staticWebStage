@@ -28,7 +28,7 @@
                 <h2> Informazioni Personali </h2>
                 <h3> 
                     <b id="nome">...</b>
-                    <!--<b id="cognome">...</b>-->
+                    <b id="cognome">...</b>
                 </h3>
 
             </div>
@@ -40,9 +40,9 @@
         </div>
         <script>
             (async function() {
-                const { text } = await( await fetch(`/api/matteo`)).json();
-                document.querySelector('#nome').textContent = text;
-                
+                const { nometec,cognometec } = await( await fetch(`/api/matteo`)).json();
+                document.querySelector('#nome').textContent = nometec;
+                document.querySelector('#cognome').textContent = cognometec;
             }())
         </script>
         <!--document.querySelector('#cognome').textContent = cognometecnico;-->
