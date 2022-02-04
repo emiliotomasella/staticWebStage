@@ -41,7 +41,7 @@
         <script>
             (async function() {
                 const { text } = await( await fetch(`/api/matteo`)).json();
-                document.querySelector('#nome').textContent = nometecnico;
+                document.querySelector('#nome').textContent = text;
                 
             }())
         </script>
