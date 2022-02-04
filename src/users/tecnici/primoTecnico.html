@@ -44,6 +44,11 @@
                 <a href='../../teamTecnico.html'> Team tecnico responsabile</a>
             </h4>
         </div>
-        
+        <script>
+            (async function() {
+                const { text } = await( await fetch(`/api/emilio`)).json();
+                document.querySelector('#name').textContent = text;
+            }())
+        </script>
     </body>
 </html>

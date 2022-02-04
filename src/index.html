@@ -19,7 +19,7 @@
         </div>
         <div id = 'corpo'>
             Benvenuto
-            <b id="name">...</b>
+            <b id="name"></b>
         </div>
         
         <div id='footer'>
@@ -28,13 +28,6 @@
             </h4>
         </div>
         
-        <script>
-            (async function() {
-                const { text } = await( await fetch(`/api/matteo`)).json();
-                document.querySelector('#name').textContent = text;
-            }())
-        </script>
-
     </body>
 
     
