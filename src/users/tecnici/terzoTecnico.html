@@ -27,14 +27,7 @@
             <div id = 'testo'>
                 <h2> Informazioni Personali </h2>
                 <h3> 
-                    Nome:
-                    </br>
-                    Cognome:
-                    </br>
-                    Data di nascita:
-                    </br>
-                    Residenza:
-                    </br>
+                    <b id="datiTecnico"></b>
                 </h3>
 
             </div>
@@ -47,7 +40,7 @@
         <script>
             (async function() {
                 const { text } = await( await fetch(`/api/matteo`)).json();
-                document.querySelector('#name').textContent = text;
+                document.querySelector('#datiTecnico').textContent = text;
             }())
         </script>
     </body>
