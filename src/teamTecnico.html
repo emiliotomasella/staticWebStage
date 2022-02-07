@@ -3,9 +3,9 @@
     <head>
 
         <script>
-            function getNomeTecnico (nomeTecnico) {
+            function getNomeTecnico (apiaddress) {
                 (async function() {
-                const { nometec,cognometec } = await( await fetch(nomeTecnico)).json();
+                const { nometec,cognometec } = await( await fetch(apiaddress)).json();
                 document.querySelector('#nomeDatoPersonale').textContent = nometec;
                 document.querySelector('#cognomeDatoPersonale').textContent = cognometec;
             }())
