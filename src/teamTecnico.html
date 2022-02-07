@@ -4,10 +4,11 @@
         <script>
             function getNomeTecnico (apiaddress) {
                 (async function() {
-                const { nometec, cognometec, ruolo } = await( await fetch(apiaddress)).json();
+                const { nometec, cognometec, ruolo, percorsoImmagine } = await( await fetch(apiaddress)).json();
                 document.querySelector('#datoPersonaleNome').textContent = nometec;
                 document.querySelector('#datoPersonaleCognome').textContent = cognometec;
                 document.querySelector('#ruoloDelTecnico').textContent = ruolo;
+                document.querySelector('#').textContent = immagine;
             }())
             }
         </script>
@@ -30,9 +31,9 @@
             </div>
         </div>
         <div id = 'corpo'>
-            <button onclick="getNomeTecnico('/api/emilio')"> Emilio </button>
-            <button onclick="getNomeTecnico('/api/guido')"> Guido </button>
-            <button onclick="getNomeTecnico('/api/matteo')"> Matteo </button>
+            <button onclick="getNomeTecnico('/api/emilio')" id="bottoneEmilio"> Emilio </button>
+            <button onclick="getNomeTecnico('/api/guido')" id="bottoneGuido"> Guido </button>
+            <button onclick="getNomeTecnico('/api/matteo')" id="bottoneMatteo"> Matteo </button>
             <br/>
             <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
             <br/>

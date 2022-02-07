@@ -31,3 +31,30 @@
     background-color: white;
     box-shadow: 0 0 5px #000;
 }
+#bottoneEmilio
+{
+    transition-duration: 0.2s;
+}
+#bottoneEmilio:hover
+{
+    background-color: lightgray;
+    color: white;
+}
+#bottoneGuido
+{
+    transition-duration: 0.2s;
+}
+#bottoneGuido:hover
+{
+    background-color: lightgray;
+    color: white;
+}
+#bottoneMatteo
+{
+    transition-duration: 0.2s;
+}
+#bottoneMatteo:hover
+{
+    background-color: lightgray;
+    color: white;
+}
