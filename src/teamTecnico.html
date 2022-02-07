@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <script>
             function getNomeTecnico (apiaddress) {
                 (async function() {
                 const { nometec,cognometec } = await( await fetch(apiaddress)).json();
-                document.querySelector('#nomeDatoPersonale').textContent = nometec;
-                document.querySelector('#cognomeDatoPersonale').textContent = cognometec;
+                document.querySelector('#datoPersonaleNome').textContent = nometec;
+                document.querySelector('#datoPersonaleCognome').textContent = cognometec;
             }())
             }
         </script>
@@ -17,6 +16,9 @@
         <title> Area Science Park: Tecnici </title>
     </head>
     <body>
+        
+        <button onclick="getNomeTecnico('/api/emilio')"> <b id="datoPersonaleNome">...</b> </button>
+
         <div id='testata'>
             <a href='index.html'>
                 <img id = 'logo' src='https://www.areasciencepark.it/wp-content/themes/areasciencepark_v3/assets/img/logo.svg' width='30%' height="10%"'></img>
