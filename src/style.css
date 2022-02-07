@@ -37,8 +37,9 @@
 }
 #bottoneEmilio:hover
 {
-    background-color: lightgray;
+    background-color: red;
     color: white;
+    box-shadow: 0 0 5px #000;
 }
 #bottoneGuido
 {
@@ -46,8 +47,9 @@
 }
 #bottoneGuido:hover
 {
-    background-color: lightgray;
+    background-color: green;
     color: white;
+    box-shadow: 0 0 5px #000;
 }
 #bottoneMatteo
 {
@@ -55,6 +57,7 @@
 }
 #bottoneMatteo:hover
 {
-    background-color: lightgray;
+    background-color: blue;
     color: white;
+    box-shadow: 0 0 5px #000;
 }
