@@ -4,9 +4,10 @@
         <script>
             function getNomeTecnico (apiaddress) {
                 (async function() {
-                const { nometec,cognometec } = await( await fetch(apiaddress)).json();
+                const { nometec, cognometec, ruolo } = await( await fetch(apiaddress)).json();
                 document.querySelector('#datoPersonaleNome').textContent = nometec;
                 document.querySelector('#datoPersonaleCognome').textContent = cognometec;
+                document.querySelector('#ruoloDelTecnico').textContent = ruolo;
             }())
             }
         </script>
@@ -17,8 +18,6 @@
     </head>
     <body>
         
-        <button onclick="getNomeTecnico('/api/emilio')"> <b id="datoPersonaleNome">...</b> </button>
-
         <div id='testata'>
             <a href='index.html'>
                 <img id = 'logo' src='https://www.areasciencepark.it/wp-content/themes/areasciencepark_v3/assets/img/logo.svg' width='30%' height="10%"'></img>
@@ -31,9 +30,21 @@
             </div>
         </div>
         <div id = 'corpo'>
+            <button onclick="getNomeTecnico('/api/emilio')"> <b id="datoPersonaleNome">...</b> </button>
+            <button onclick="getNomeTecnico('/api/guido')"> <b id="datoPersonaleNome">...</b> </button>
+            <button onclick="getNomeTecnico('/api/matteo')"> <b id="datoPersonaleNome">...</b> </button>
+            <br/>
+            <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
+            <br/>
+            Nome: <b id="datoPersonaleNome"> ...</b>
+            <br/>
+            Cognome: <b id="datoPersonaleCognome"> ...</b>
+            <br/>
+            Ruolo: <b id="ruoloDelTecnico"> ...</b>
+<!--
             <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
             </br>
-            <button onclick="getNomeTecnico('/api/emilio')"> Emilio </button>
+            Emilio 
             </br>
             <a href = "users/tecnici/secondoTecnico.html">
                 <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
@@ -47,6 +58,7 @@
                 Matteo
             </a>
             </br>
+-->
         </div>
         </br>
         

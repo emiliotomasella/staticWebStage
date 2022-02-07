@@ -1,7 +1,8 @@
 module.exports = async function (context, req) {
     context.res.json({
         nometec: "Matteo",
-        cognometec: "Saitta" 
+        cognometec: "Saitta",
+        ruolo: "tutor"
     });
 };  
 
