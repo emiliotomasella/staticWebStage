@@ -1,5 +1,10 @@
+#logo
+{
+    width: 50%;
+}
 #testata
 {
+    
     text-align: center;
 }
 #corpo
@@ -60,4 +65,20 @@
     background-color: blue;
     color: white;
     box-shadow: 0 0 5px #000;
+}
+#link
+{
+    transition-duration: 0.2s;
+}
+#link:hover
+{
+    box-shadow: 0 0 5px #000;
+}
+
+@media screen and (max-width: 1000px ) {
+    #logo 
+    {
+        width: 80%;
+        height: auto;
+    }  
 }
