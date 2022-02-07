@@ -3,6 +3,6 @@ module.exports = async function (context, req) {
         nometec: "Emilio",
         cognometec: "Tomasella",
         ruolo: "stagista",
-        percorsoImmagine: "https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1"
+        percorsoimmagine: "https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1"
     });
 };  
