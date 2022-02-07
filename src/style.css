@@ -15,6 +15,7 @@
     text-align: justify;
     padding-right: 10%;
     padding-left: 10%;
+    font-family: 'Times New Roman', Times, serif ;
 }
 #titoloImmagine
 {
@@ -31,10 +32,21 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    padding: 5px;
+    padding: 1px;
     background-color: white;
     box-shadow: 0 0 5px #000;
+    margin-left: 38%;
+    margin-right: 38%;
 }
+@media only screen and (max-width: 800px)
+{
+    #footer
+    {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+}
+
 #bottoneEmilio
 {
     transition-duration: 0.2s;
@@ -67,10 +79,10 @@
 }
 #link
 {
-    transition-duration: 0.2s;
+    transition-duration: 0,2s;
 }
 #link:hover
 {
-    box-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px lightslategray;
 }
 
