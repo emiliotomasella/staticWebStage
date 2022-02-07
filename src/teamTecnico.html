@@ -6,7 +6,6 @@
             function getNomeTecnico (nomeTecnico) {
                 (async function() {
                 const { nometec,cognometec } = await( await fetch(nomeTecnico)).json();
-                document.querySelector('#nomeDescrizioneFoto').textContent = nometec;
                 document.querySelector('#nomeDatoPersonale').textContent = nometec;
                 document.querySelector('#cognomeDatoPersonale').textContent = cognometec;
             }())
