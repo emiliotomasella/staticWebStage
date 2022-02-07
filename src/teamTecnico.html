@@ -5,9 +5,9 @@
             function getNomeTecnico (apiaddress) {
                 (async function() {
                 const { nometec, cognometec, ruolo } = await( await fetch(apiaddress)).json();
-                document.querySelector('#datoPersonaleNome').textContent = nometec;
-                document.querySelector('#datoPersonaleCognome').textContent = cognometec;
-                document.querySelector('#ruoloDelTecnico').textContent = ruolo;
+                document.querySelectorAll('#datoPersonaleNome').textContent = nometec;
+                document.querySelectorAll('#datoPersonaleCognome').textContent = cognometec;
+                document.querySelectorAll('#ruoloDelTecnico').textContent = ruolo;
             }())
             }
         </script>
