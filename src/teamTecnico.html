@@ -8,7 +8,7 @@
                 document.querySelector('#datoPersonaleNome').textContent = nometec;
                 document.querySelector('#datoPersonaleCognome').textContent = cognometec;
                 document.querySelector('#ruoloDelTecnico').textContent = ruolo;
-                document.querySelector('#percorsoImmagine').textContent = percorsoimmagine;
+                document.querySelector('#foto').textContent = immagine;
             }())
             }
         </script>
@@ -35,7 +35,7 @@
             <button onclick="getNomeTecnico('/api/guido')" id="bottoneGuido"> Guido </button>
             <button onclick="getNomeTecnico('/api/matteo')" id="bottoneMatteo"> Matteo </button>
             <br/>
-            <img id = 'immagine' src="percorsoImmagine" width="14%"/>
+            <img id = 'foto' width="14%"/>
             <br/>
             Nome: <b id="datoPersonaleNome"> ...</b>
             <br/>
