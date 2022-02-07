@@ -1,10 +1,9 @@
 #logo
 {
-    width: 50%;
+    
 }
 #testata
 {
-    
     text-align: center;
 }
 #corpo
@@ -75,10 +74,3 @@
     box-shadow: 0 0 5px #000;
 }
 
-@media screen and (max-width: 1000px ) {
-    #logo 
-    {
-        width: 80%;
-        height: auto;
-    }  
-}
