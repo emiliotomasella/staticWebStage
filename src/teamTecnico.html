@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <script>
+            function getNomeTecnico (nomeTecnico) {
+                (async function() {
+                const { nometec,cognometec } = await( await fetch(nomeTecnico)).json();
+                document.querySelector('#nomeDescrizioneFoto').textContent = nometec;
+                document.querySelector('#nomeDatoPersonale').textContent = nometec;
+                document.querySelector('#cognomeDatoPersonale').textContent = cognometec;
+            }())
+            }
+        </script>
+
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css" />
         <title> Area Science Park: Tecnici </title>
@@ -18,11 +30,9 @@
             </div>
         </div>
         <div id = 'corpo'>
-            <a href = "users/tecnici/primoTecnico.html">
-                <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
-                </br>
-                Emilio
-            </a>
+            <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
+            </br>
+            <button onclick="getNomeTecnico('/api/emilio')"> Emilio </button>
             </br>
             <a href = "users/tecnici/secondoTecnico.html">
                 <img id = 'immagine' src="https://th.bing.com/th/id/OIP.ZT-Tw8tYy38htqch69vsGQAAAA?pid=ImgDet&rs=1" width="14%"/>
